@@ -1,0 +1,341 @@
+ /* GENERAL SETTINGS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #222;
+}
+
+
+/* HEADER */
+
+header {
+    width: 100%;
+    min-height: 176px;
+    background-color: #000;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 8px 30px;
+}
+
+
+/* LOGO - 160px x 160px */
+
+header .logo {
+    width: 160px !important;
+    height: 160px !important;
+
+    min-width: 160px;
+    min-height: 160px;
+
+    flex: 0 0 160px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+}
+
+header .logo img {
+    width: 160px !important;
+    height: 160px !important;
+
+    max-width: 160px !important;
+    max-height: 160px !important;
+
+    object-fit: contain;
+    display: block;
+}
+
+
+/* NAVIGATION */
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ff8c00;
+}
+
+nav .login-btn {
+    background-color: #ff8c00;
+    color: #000;
+
+    padding: 10px 22px;
+    border-radius: 5px;
+}
+
+nav .login-btn:hover {
+    background-color: white;
+    color: #000;
+}
+
+
+/* HOME / HERO SECTION */
+
+.hero {
+    min-height: 500px;
+
+    background:
+        linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
+        url("/tow_truck_system/image/tow-truck.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.hero-content {
+    max-width: 750px;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 42px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.hero h1 span {
+    color: #ff8c00;
+}
+
+.hero h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 17px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+
+/* BUTTON */
+
+.main-btn {
+    display: inline-block;
+
+    background-color: #ff8c00;
+    color: black;
+
+    text-decoration: none;
+
+    padding: 13px 28px;
+    border-radius: 5px;
+
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.main-btn:hover {
+    background-color: white;
+    transform: translateY(-2px);
+}
+
+
+/* SERVICES SECTION */
+
+.services {
+    padding: 60px 25px;
+    text-align: center;
+    background-color: #525050;
+}
+
+.services h2 {
+    font-size: 32px;
+    color: #111;
+    margin-bottom: 15px;
+}
+
+.section-description {
+    color: #faf8f8;
+    margin-bottom: 35px;
+}
+
+.service-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.service-card {
+    background-color: white;
+
+    width: 280px;
+    padding: 35px 20px;
+
+    border-radius: 8px;
+    border-bottom: 4px solid #ff8c00;
+
+    box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-7px);
+}
+
+.service-card h3 {
+    color: #e87900;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.service-card p {
+    color: #555;
+    line-height: 1.6;
+}
+
+
+/* BOOKING SECTION */
+
+.booking {
+    background-color: #222;
+    color: white;
+
+    text-align: center;
+    padding: 65px 20px;
+}
+
+.booking h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.booking p {
+    margin-bottom: 25px;
+    color: #ddd;
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: #000;
+    color: white;
+
+    text-align: center;
+    padding: 25px 15px;
+}
+
+footer h3 {
+    color: #ff8c00;
+    margin-bottom: 10px;
+}
+
+footer p {
+    font-size: 13px;
+    color: #bbb;
+    margin: 8px 0;
+}
+
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 600px) {
+
+    header {
+        min-height: 176px;
+
+        padding: 8px 12px;
+
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    header .logo {
+        width: 160px !important;
+        height: 160px !important;
+
+        min-width: 160px;
+        min-height: 160px;
+
+        flex: 0 0 160px;
+    }
+
+    header .logo img {
+        width: 160px !important;
+        height: 160px !important;
+
+        max-width: 160px !important;
+        max-height: 160px !important;
+    }
+
+    nav {
+        gap: 12px;
+        flex-wrap: wrap;
+    }
+
+    nav a {
+        font-size: 12px;
+    }
+
+    nav .login-btn {
+        padding: 8px 12px;
+    }
+
+    .hero {
+        min-height: 400px;
+    }
+
+    .hero h1 {
+        font-size: 27px;
+    }
+
+    .hero h2 {
+        font-size: 20px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    .services h2 {
+        font-size: 27px;
+    }
+
+    .service-card {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .booking h2 {
+        font-size: 25px;
+    }
+
+}
